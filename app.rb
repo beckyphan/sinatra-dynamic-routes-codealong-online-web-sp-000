@@ -20,10 +20,19 @@ class App < Sinatra::Base
     "Goodbye, #{@user_name}."
   end
   
+<<<<<<< HEAD
   get '/multiply/:num1/:num2' do 
     @num1 = params[:num1].to_i
     @num2 = params[:num2].to_i
     "#{@num1 * @num2}"
   end
 
+=======
+   get '/multiply/:num1/:num2' do 
+    @factors = params[:num1, :num2]
+    @product = :num1._to_i * :num2.to_i
+    "#{@product}"
+  end
+  
+>>>>>>> fea4c2e0dfcfffcbce28f43151caf5baf5de07b1
 end
